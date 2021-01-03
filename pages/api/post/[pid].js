@@ -1,9 +1,8 @@
-import { format } from "date-fns";
-
-export default function format(req, res) {
+export default (req, res) => {
     const {
         query: { pid },
     } = req
+    // const pid = req.query.pid
 
     res.end(`Post: ${pid}`)
 }
